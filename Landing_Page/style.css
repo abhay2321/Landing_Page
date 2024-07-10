@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d8cccc;
+  }
+
+  header.showPage {
+    background: url('barcelona.jpg') no-repeat center center/cover;
+    color: rgb(59, 29, 29);
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  header.showPage h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  header.showPage p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #90d9f1;
+  }
+
+  .btn-1 {
+    background-color: #ff6f61;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-1:hover {
+    background-color: #ff3f3f;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #655656;
+    padding: 10px;
+  }
+
+  nav a {
+    color: rgb(240, 191, 191);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #dd4f42;
+  }
+
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background-color: #875550;
+  }
+
+  section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+   
+  }
+
+  .flex-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .flex-columns p {
+    width: 30%;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    width: auto;
+    transition: transform 0.5s ease;
+  }
+
+  .image-gallery:hover img {
+    transform: scale(1.05);
+  }
+
+  footer {
+    background-color: #333;
+    color: rgb(89, 82, 82);
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .social-links a {
+    color: rgb(86, 1, 1);
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #ff6f61;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  header.showPage, section, footer {
+    animation: fadeIn 1s ease-in-out;
+  }
